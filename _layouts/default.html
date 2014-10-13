@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{% if page.is-post %}post-template{% else %}home-template{% endif %}">
+
+    {% unless page.is-post %}
+    {% include header.html %}
+    {% endunless %}
+
+    <main class="content" role="main">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script src="/public/jquery.min.js?v=53f0827be1"></script>
+
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=53f0827be1"></script>
+    <script type="text/javascript" src="/assets/js/index.js?v=53f0827be1"></script>
+    <script type="text/javascript" src="/assets/js/prism.js?v=53f0827be1"></script>
+
+</body>
+</html>

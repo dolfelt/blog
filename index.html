@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <article class="post">
+    <header class="post-header">
+      <span class="post-meta"><time datetime="2014-04-13">{{ post.date | date: "%-d %b %Y" }}</time> </span>
+      <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+      {{ post.excerpt }}
+    </section>
+  </article>
+{% endfor %}

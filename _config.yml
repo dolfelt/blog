@@ -1,0 +1,14 @@
+# Site settings
+title: "cto by day"
+email: cto@ctobyday.com
+description: > # this means to ignore newlines until "baseurl:"
+  I write code for a living. It helps me scratch the itch to create.
+  In that same vein, I have a family. My 3 kids and wife are amazing
+  and always come first. By day I am a CTO, but my night life is anything but.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ctobyday.com" # the base hostname & protocol for your site
+twitter_username: dolfelt
+github_username:  dolfelt
+
+# Build settings
+markdown: kramdown
