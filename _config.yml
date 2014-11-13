@@ -10,5 +10,18 @@ url: "http://ctobyday.com" # the base hostname & protocol for your site
 twitter_username: dolfelt
 github_username:  dolfelt
 
+# Default Values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+
+
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
