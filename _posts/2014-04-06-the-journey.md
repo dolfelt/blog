@@ -2,7 +2,7 @@
 layout: post
 title:  "The Journey"
 date:   2014-04-06 15:50:42
-categories: startup saas
+categories: startup saas life
 ---
 
 The start of something new is always a little exciting. There is a rush of excitement because of the great possibilities, and just a bit because of the risk. Even the greatest ideas have the possibility of failure. A great idea without proper execution can easily fizzle ... and die.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Global Ember Alert Messages"
 date:   2014-11-10 21:26:35
-categories: saas ember ember-cli programming
+categories: saas ember ember-cli development
 ---
 
 A global messaging system in Ember.js should be simple, but when navigating between controllers and updating templates, it can quickly become confusing. Creating global alert messages doesn't have to be confusing though. Thinking it through and setting it up right can save you tons of time as you build your app.

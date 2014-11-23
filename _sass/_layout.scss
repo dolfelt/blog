@@ -158,10 +158,20 @@ h3 {
 
 h4 {
     font-size: 3rem;
+
+    + h5 {
+        margin-top: 1.1em;
+    }
 }
 
 h5 {
     font-size: 2.5rem;
+    color: #999;
+    font-weight: 300;
+
+    + p {
+        margin-top: 0;
+    }
 }
 
 h6 {
@@ -562,6 +572,10 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-meta a:hover {
     text-decoration: underline;
+}
+
+.social-share {
+    font-family: Monaco, "Courier New", monospace;
 }
 
 .user-meta {
