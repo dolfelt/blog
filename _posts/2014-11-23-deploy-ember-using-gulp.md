@@ -54,7 +54,7 @@ gulp.task('deploy:index', function() {
     .pipe(sftp({
         host: 'example.com',
         user: 'deploy',
-        password: '<deploy-password>',
+        pass: '<deploy-password>',
         remotePath: '/var/www/example.com/'
       }));
 });
