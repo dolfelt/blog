@@ -5,17 +5,7 @@
             <h1 class="blog-title">{{ site.title }}</h1>
             <h2 class="blog-description"></h2>
         </div>
-        
-        <div class="menu-wrapper">
-        <div class="main-menu" role="nav">
-			{% for page in site.pages %}
-				{% if page.title or page.link-title %}
-					<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-						{% if page.link-title %}{{ page.link-title }}{% else %}{{ page.title }}{% endif %}
-					</a>
-				{% endif %}
-			{% endfor %}
-		</div>
-		</div>
+
+        {% include menu.html %}
     </div>
 </header>

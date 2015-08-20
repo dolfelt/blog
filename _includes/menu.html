@@ -1,0 +1,15 @@
+<div class="menu-wrapper clearfix">
+  <ul class="main-menu" role="nav">
+    <li><a href="{{ site.baseurl }}/">CTO by Day</a></li>
+    <li><a class="page-link" href="http://github.com/dolfelt"><i class="fa fa-github"></i> Github</a></li>
+    <li><a class="page-link" href="http://twitter.com/dolfelt"><i class="fa fa-twitter"></i> Twitter</a></li>
+    {% for page in site.pages %}
+      {% if page.title or page.link-title %}
+        <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+          {% if page.link-title %}{{ page.link-title }}{% else %}{{ page.title }}{% endif %}
+        </a></li>
+      {% endif %}
+    {% endfor %}
+    <li>&nbsp;</li>
+  </ul>
+</div>

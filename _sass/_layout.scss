@@ -285,6 +285,10 @@ pre {
     overflow: auto;
     background: #F7FAFB;
     border-radius: 3px;
+
+    .hljs {
+      background: #F7FAFB;
+    }
 }
 
 pre code, tt {
@@ -406,6 +410,68 @@ margin on the iframe, cause it breaks stuff. */
    4. General - The main styles for the the theme
    ========================================================================== */
 
+
+.menu-wrapper {
+   width: 100%;
+   background: #444;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 400;
+   z-index: 100;
+
+   .main-menu {
+       width: 80%;
+       max-width: 700px;
+       margin: 0 auto;
+       text-align: right;
+       list-style: none;
+       font-size: 14px;
+
+       li {
+         float: left;
+         border-left: 1px solid rgba(255,255,255,0.07);
+         border-right: 1px solid rgba(0,0,0,0.15);
+
+         &:first-child {
+           border-left: none;
+           display: none;
+           a {
+             padding-left: 0;
+           }
+         }
+         &:last-child {
+           border-right: none;
+         }
+
+       }
+       a {
+           color: white;
+           opacity: 0.6;
+           line-height: 32px;
+           padding: 0 10px;
+           transition: opacity 0.2s ease-in-out;
+           display: inline-block;
+
+           &:hover {
+               opacity: 1;
+               text-decoration: none;
+           }
+       }
+   }
+
+   &.scrolling {
+     position: fixed !important;
+     bottom: auto !important;
+     top: 0px;
+     border-top: none !important;
+     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3) !important;
+
+     .main-menu li:first-child {
+       display: inline-block;
+     }
+   }
+}
+
 /* Big cover image on the home page */
 .site-head {
     position: relative;
@@ -417,31 +483,13 @@ margin on the iframe, cause it breaks stuff. */
     text-align: left;
     color: #fff;
     background: #303538 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMzAzNTM4Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMyODJiMmQiPjwvcGF0aD4KPC9zdmc+");
-
+    padding-bottom: 32px;
 
     .menu-wrapper {
-        position: absolute;
-        width: 100%;
-        bottom: 0px;
-        .main-menu {
-            width: 80%;
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: right;
-
-            a {
-                color: white;
-                opacity: 0.6;
-                text-transform: uppercase;
-                font-size: 12px;
-                transition: opacity 0.2s ease-in-out;
-
-                &:hover {
-                    opacity: 1;
-                    text-decoration: none;
-                }
-            }
-        }
+      position: absolute;
+      bottom: 0px;
+      box-shadow: 0 0 3px rgba(0,0,0,0.2);
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
 
 }
