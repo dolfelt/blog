@@ -3,8 +3,8 @@ require 'net/http'
 
 desc 'Ping pubsubhubbub server.'
 task :ping do
-  
-  print 'Pinging pubsubhubbub server'
+
+  print "Pinging pubsubhubbub server\n"
   data = 'hub.mode=publish&hub.url=' + CGI::escape("http://ctobyday.com/feed")
   http = Net::HTTP.new('pubsubhubbub.appspot.com', 80)
   resp, data = http.post('http://pubsubhubbub.appspot.com/publish',
