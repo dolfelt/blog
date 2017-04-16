@@ -14,7 +14,7 @@ __tl;dr;__  [Check out the source code](https://github.com/dolfelt/avatar-go)
 
 Avatars are usually the last thought for most developers building an awesome product or service. And perhaps they should be. A lot of people just default to Gravatar or some other global service. And this is generally fine, at least at the beginning.
 
-Users' preferences towards avatars can vary greatly. What we discovered at [When I Work](http://wheniwork.com) is that some of our customers thought avatars to be just as important as our scheduling product. They didn't fully understand how to use Gravatar, and support spent way to long explaining things to them.
+Users' preferences towards avatars can vary greatly. What we discovered at [When I Work](http://wheniwork.com) is that some of our customers thought avatars to be just as important as our scheduling product. They didn't fully understand how to use Gravatar, and support spent way too long explaining things to them.
 
 That's when we decided to write an avatar service (originally in PHP). We architected it outside the main application and just communicated through standard HTTP.
 
@@ -37,7 +37,7 @@ Configuration should be simple. Using JSON and built in Go structs, it couldn't 
 
 ##### Simplicity &amp; Flexibility
 
-The service is simple and doesn't pretend to force you to use it a certain way. Images are associated with a SHA1 hash then then uploaded to S3. There are plans to add additional storage providers, but S3 makes the most sense overall. Data related to the images is all stored in PostgreSQL.
+The service is simple and doesn't pretend to force you to use it a certain way. Images are associated with a SHA1 hash, then uploaded to S3. There are plans to add additional storage providers, but S3 makes the most sense overall. Data related to the images is all stored in PostgreSQL.
 
 You can hash anything, use that hash to upload, then retrieve it later. It's really that simple.
 
